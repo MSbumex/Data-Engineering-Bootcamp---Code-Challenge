@@ -1,0 +1,13 @@
+#Use this dictionary to store your answers in the correct format in the cells below , do not modify the keys
+answer_dict =  {"Q1" : 475.3163392572124,
+                "Q2" : [['Mercedes-Benz', 333],['BMW', 284],['Chevrolet', 253],['Ford', 185],['GMC', 163]],
+                "Q3" : ['CNG', 'Diesel', 'Gasoline or E85', 'Gasoline or natural gas', 'Gasoline or propane', 'Midgrade', 'Premium', 'Premium Gas or Electricity', 'Premium and Electricity', 'Premium or E85', 'Regular', 'Regular Gas and Electricity', 'Regular Gas or Electricity'],
+                "Q4" : None,
+                "Q5" : None,
+                "Q6" : None,
+                "Q7" : None}
+
+import pickle
+pickle.dump(answer_dict, open('test.pkl', 'wb'))
+my_dict = pickle.load(open('./test.pkl', 'rb'))
+my_dict
